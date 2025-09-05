@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Group 1</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+
+/* CSS for section section:header */
+#section-header {
+  padding: 0;
+}
+.site-header {
+  background-color: var(--color-secondary);
+  padding: 23px 32px;
+}
+.header-content {
+  display: center;
+  align-items: center;
+  gap: 14px;
+  text-align: center;
+
+
+}
+.header-icon {
+  width: 70px;
+  height: 70px;
+  flex-shrink: 0;
+  text-align: center;
+
+
+}
+.header-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  color: var(--color-white);
+  text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
+  margin: 0;
+  text-align: center;
+
+
+}
+@media (max-width: 768px) {
+  .site-header {
+    padding: 20px;
+  }
+  .header-content {
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 24px;
+
+  }
+}
+
+/* CSS for section section:lookout */
+#section-lookout {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.lookout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(184px, 1fr));
+  gap: 41px 20px;
+}
+.lookout-card {
+  position: relative;
+  width: 184px;
+  height: 103px;
+  background-color: #000124;
+  border: 1px solid var(--color-secondary);
+  border-radius: 0px 0px 28px 0px;
+  padding: 26px 5px 25px 5px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.card-number {
+  font-weight: 700;
+  font-size: 57px;
+  line-height: 1;
+  text-align: center;
+}
+.stroked-text-green {
+  color: transparent;
+  -webkit-text-stroke: 1.5px var(--color-primary);
+  text-stroke: 1.5px var(--color-primary);
+}
+.card-text {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.2;
+  width: 120px;
+}
+.card-icon-wrapper {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+}
+@media (max-width: 768px) {
+  #section-lookout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .lookout-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 60px;
+  }
+}
+
+/* CSS for section section:what-to-do */
+#section-what-to-do {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.what-to-do-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.what-to-do-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(71, 58, 204, 0.5);
+}
+.what-to-do-item:last-child {
+  border-bottom: none;
+}
+.what-to-do-item p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  flex: 1;
+}
+.list-icon-wrapper {
+  position: relative;
+  width: 71px;
+  height: 71px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-icon-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.list-icon-fg {
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  #section-what-to-do {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .what-to-do-item {
+    gap: 15px;
+  }
+  .what-to-do-item p {
+    font-size: 16px;
+  }
+}
+
+/* CSS for section section:checklist */
+#section-checklist {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.checklist-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.checklist-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--color-secondary);
+}
+.checklist-item:last-child {
+  border-bottom: none;
+}
+.checklist-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.checklist-content {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+.checklist-number {
+  font-weight: 800;
+  font-size: 84px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--color-primary);
+  text-stroke: 2px var(--color-primary);
+}
+.checklist-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  width: 255px;
+}
+.checklist-image {
+  flex-shrink: 0;
+}
+.merged-image-container {
+  position: relative;
+}
+@media (max-width: 768px) {
+  #section-checklist {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .checklist-item,
+  .checklist-item:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
+  }
+  .checklist-content {
+    flex-direction: column;
+    order: 1;
+  }
+  .checklist-image {
+    order: 2;
+    margin-top: 20px;
+  }
+  .checklist-text {
+    width: auto;
+    max-width: 300px;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<header id="section-header" class="site-header">
+  <div class="header-content">
+    <img src="images/16949cbed496afc0c1f0e12197b994bb105007e9.png" alt="AI Misinformation Guide Icon" class="header-icon">
+    <h1 class="header-title">A Citizen Guide to AI Misinformation</h1>
+  </div>
+</header>
+<section id="section-lookout" class="infographic-container">
+  <h2 class="section-title">Look out for</h2>
+  <div class="lookout-grid">
+    <div class="lookout-card">
+      <div class="card-content">
+        <span class="card-number stroked-text-green">1</span>
+        <p class="card-text">Unnatural facial movement</p>
+      </div>
+      <!--merged image-->
+      <div class="card-icon-wrapper" style="top: -16px; right: -17px;">
+        <img src="images/1_10.svg" alt="Icon background" style="position: absolute; top: 0; left: 0; width: 45px; height: 45px;">
+        <img src="images/1_51.svg" alt="Facial movement icon" style="position: absolute; top: 10px; left: 13px; width: 20px; height: 26px;">
+      </div>
+    </div>
+    <div class="lookout-card">
+      <div class="card-content">
+        <span class="card-number stroked-text-green">2</span>
+        <p class="card-text">Low metadata or missing provenance</p>
+      </div>
+      <!--merged image-->
+      <div class="card-icon-wrapper" style="top: -16px; right: -17px;">
+        <img src="images/1_18.svg" alt="Icon background" style="position: absolute; top: 0; left: 0; width: 45px; height: 45px;">
+        <img src="images/1_32.svg" alt="Metadata icon" style="position: absolute; top: 7px; left: 9px; width: 27px; height: 31px;">
+      </div>
+    </div>
+    <div class="lookout-card">
+      <div class="card-content">
+        <span class="card-number stroked-text-green">3</span>
+        <p class="card-text">Odd lighting/skin tone</p>
+      </div>
+      <!--merged image-->
+      <div class="card-icon-wrapper" style="top: -16px; right: -17px;">
+        <img src="images/1_30.svg" alt="Icon background" style="position: absolute; top: 0; left: 0; width: 45px; height: 45px;">
+        <img src="images/1_55.svg" alt="Lighting icon" style="position: absolute; top: 12px; left: 8px; width: 29px; height: 23px;">
+      </div>
+    </div>
+    <div class="lookout-card">
+      <div class="card-content">
+        <span class="card-number stroked-text-green">4</span>
+        <p class="card-text">Robotic or inconsistent</p>
+      </div>
+      <!--merged image-->
+      <div class="card-icon-wrapper" style="top: -16px; right: -17px;">
+        <img src="images/1_14.svg" alt="Icon background" style="position: absolute; top: 0; left: 0; width: 45px; height: 45px;">
+        <img src="images/1_527.svg" alt="Robotic icon" style="position: absolute; top: 8px; left: 11px; width: 23px; height: 27px;">
+      </div>
+    </div>
+    <div class="lookout-card">
+      <div class="card-content">
+        <span class="card-number stroked-text-green">5</span>
+        <p class="card-text">Suspicious source channels</p>
+      </div>
+      <!--merged image-->
+      <div class="card-icon-wrapper" style="top: -16px; right: -17px;">
+        <img src="images/1_22.svg" alt="Icon background" style="position: absolute; top: 0; left: 0; width: 45px; height: 45px;">
+        <img src="images/1_24.svg" alt="Source channels icon" style="position: absolute; top: 10px; left: 11px; width: 22px; height: 25px;">
+      </div>
+    </div>
+  </div>
+</section>
+<section id="section-what-to-do" class="infographic-container">
+  <h2 class="section-title">If you suspected a fake - what to do</h2>
+  <ul class="what-to-do-list">
+    <li class="what-to-do-item">
+      <!--merged image-->
+      <div class="list-icon-wrapper">
+        <img src="images/1_61.svg" alt="Icon background circle" class="list-icon-bg">
+        <img src="images/1_71.svg" alt="Pause icon" class="list-icon-fg" style="width: 35px; height: 51px;">
+      </div>
+      <p>Don’t forward immediately. Pause and verify first</p>
+    </li>
+    <li class="what-to-do-item">
+      <!--merged image-->
+      <div class="list-icon-wrapper">
+        <img src="images/1_62.svg" alt="Icon background circle" class="list-icon-bg">
+        <img src="images/1_99.svg" alt="Report icon" class="list-icon-fg" style="width: 39px; height: 37px;">
+      </div>
+      <p>Report to the platform(use the “misinformation” or “impersonation” option).</p>
+    </li>
+    <li class="what-to-do-item">
+      <!--merged image-->
+      <div class="list-icon-wrapper">
+        <img src="images/1_63.svg" alt="Icon background circle" class="list-icon-bg">
+        <img src="images/1_103.svg" alt="Share icon" class="list-icon-fg" style="width: 34px; height: 49px;">
+      </div>
+      <p>Share a short correction only after reputable fact-checkers confirm it’s fake</p>
+    </li>
+    <li class="what-to-do-item">
+      <!--merged image-->
+      <div class="list-icon-wrapper">
+        <img src="images/1_64.svg" alt="Icon background circle" class="list-icon-bg">
+        <img src="images/1_66.svg" alt="Verify source icon" class="list-icon-fg" style="width: 35px; height: 49px;">
+      </div>
+      <p>Verify the source Check the original poster’s profile, credibility, and posting history</p>
+    </li>
+    <li class="what-to-do-item">
+      <!--merged image-->
+      <div class="list-icon-wrapper">
+        <img src="images/1_69.svg" alt="Icon background circle" class="list-icon-bg">
+        <img src="images/1_106.svg" alt="Preserve evidence icon" class="list-icon-fg" style="width: 35px; height: 39px;">
+      </div>
+      <p>Preserve evidence: screenshot timestamps, URLs, and usernames(helpful for investigators). Check on fact-checker</p>
+    </li>
+  </ul>
+</section>
+<section id="section-checklist" class="infographic-container">
+  <h2 class="section-title">Quick Verification Checklist</h2>
+  <div class="checklist-container">
+    <div class="checklist-item">
+      <div class="checklist-content">
+        <span class="checklist-number">1</span>
+        <p class="checklist-text">Reverse image/video search</p>
+      </div>
+      <img src="images/1_436.svg" alt="Illustration of reverse image search" class="checklist-image">
+    </div>
+    <div class="checklist-item">
+      <!--merged image-->
+      <div class="checklist-image merged-image-container" style="width: 145px; height: 141px;">
+        <img src="images/1_353.svg" alt="abstract illustration part" style="position: absolute; top: 0px; left: 0px; width: 29.4px; height: 86.15px;">
+        <img src="images/1_354.svg" alt="abstract illustration part" style="position: absolute; top: 9.55px; left: 5.75px; width: 19.85px; height: 74.41px;">
+        <img src="images/1_355.svg" alt="abstract illustration part" style="position: absolute; top: 7.08px; left: 9.87px; width: 21.3px; height: 62.87px;">
+        <img src="images/1_356.svg" alt="abstract illustration part" style="position: absolute; top: 24.9px; left: 13.93px; width: 9.89px; height: 44.13px;">
+        <img src="images/1_357.svg" alt="abstract illustration part" style="position: absolute; top: 34.52px; left: 4.77px; width: 77.41px; height: 99.14px;">
+        <img src="images/1_358.svg" alt="abstract illustration part" style="position: absolute; top: 115.54px; left: 6.88px; width: 12.48px; height: 16.64px;">
+        <img src="images/1_359.svg" alt="abstract illustration part" style="position: absolute; top: 110.05px; left: 6.87px; width: 0.33px; height: 2.21px;">
+        <img src="images/1_360.svg" alt="abstract illustration part" style="position: absolute; top: 33.8px; left: 9.66px; width: 68.43px; height: 96.24px;">
+        <img src="images/1_361.svg" alt="abstract illustration part" style="position: absolute; top: 36.07px; left: 10.62px; width: 65.85px; height: 92.62px;">
+        <img src="images/1_362.svg" alt="abstract illustration part" style="position: absolute; top: 43.28px; left: 17.89px; width: 22.82px; height: 20.62px;">
+        <img src="images/1_363.svg" alt="abstract illustration part" style="position: absolute; top: 44.51px; left: 44.86px; width: 22.92px; height: 1.62px;">
+        <img src="images/1_365.svg" alt="abstract illustration part" style="position: absolute; top: 48.96px; left: 44.86px; width: 22.92px; height: 1.62px;">
+        <img src="images/1_367.svg" alt="abstract illustration part" style="position: absolute; top: 53.62px; left: 44.86px; width: 22.92px; height: 1.62px;">
+        <img src="images/1_369.svg" alt="abstract illustration part" style="position: absolute; top: 67.76px; left: 18.0px; width: 51.86px; height: 1.62px;">
+        <img src="images/1_371.svg" alt="abstract illustration part" style="position: absolute; top: 71.13px; left: 18.0px; width: 51.86px; height: 1.62px;">
+        <img src="images/1_373.svg" alt="abstract illustration part" style="position: absolute; top: 76.6px; left: 17.61px; width: 7.15px; height: 6.47px;">
+        <img src="images/1_374.svg" alt="abstract illustration part" style="position: absolute; top: 78.53px; left: 26.24px; width: 12.9px; height: 2.13px;">
+        <img src="images/1_376.svg" alt="abstract illustration part" style="position: absolute; top: 76.6px; left: 42.78px; width: 7.14px; height: 6.47px;">
+        <img src="images/1_377.svg" alt="abstract illustration part" style="position: absolute; top: 78.53px; left: 51.41px; width: 12.9px; height: 2.13px;">
+        <img src="images/1_379.svg" alt="abstract illustration part" style="position: absolute; top: 90.37px; left: 16.93px; width: 52.96px; height: 2.13px;">
+        <img src="images/1_381.svg" alt="abstract illustration part" style="position: absolute; top: 99.55px; left: 16.93px; width: 52.96px; height: 2.13px;">
+        <img src="images/1_383.svg" alt="abstract illustration part" style="position: absolute; top: 108.74px; left: 16.93px; width: 52.96px; height: 2.13px;">
+        <img src="images/1_385.svg" alt="abstract illustration part" style="position: absolute; top: 117.93px; left: 16.93px; width: 52.96px; height: 2.13px;">
+        <img src="images/1_387.svg" alt="abstract illustration part" style="position: absolute; top: 46.92px; left: 19.21px; width: 18.76px; height: 11.43px;">
+        <img src="images/1_388.svg" alt="abstract illustration part" style="position: absolute; top: 58.84px; left: 24.93px; width: 3.15px; height: 3.09px;">
+        <img src="images/1_389.svg" alt="abstract illustration part" style="position: absolute; top: 58.95px; left: 31.87px; width: 3.31px; height: 3.17px;">
+        <img src="images/1_390.svg" alt="abstract illustration part" style="position: absolute; top: 21.32px; left: 38.15px; width: 9.16px; height: 9.88px;">
+        <img src="images/1_391.svg" alt="abstract illustration part" style="position: absolute; top: 22.24px; left: 38.99px; width: 4.39px; height: 5.72px;">
+        <img src="images/1_392.svg" alt="abstract illustration part" style="position: absolute; top: 29.57px; left: 29.47px; width: 25.51px; height: 5.52px;">
+        <img src="images/1_393.svg" alt="abstract illustration part" style="position: absolute; top: 30.43px; left: 36.4px; width: 1.26px; height: 0.33px;">
+        <img src="images/1_394.svg" alt="abstract illustration part" style="position: absolute; top: 30.43px; left: 30.48px; width: 5.37px; height: 3.22px;">
+        <img src="images/1_395.svg" alt="abstract illustration part" style="position: absolute; top: 33.49px; left: 20.6px; width: 42.64px; height: 5.33px;">
+        <img src="images/1_396.svg" alt="abstract illustration part" style="position: absolute; top: 63.84px; left: 99.86px; width: 34.92px; height: 25.04px;">
+        <img src="images/1_399.svg" alt="abstract illustration part" style="position: absolute; top: 81.17px; left: 108.31px; width: 35.73px; height: 27.09px;">
+        <img src="images/1_403.svg" alt="abstract illustration part" style="position: absolute; top: 69.11px; left: 105.29px; width: 33.35px; height: 33.54px;">
+        <img src="images/1_404.svg" alt="abstract illustration part" style="position: absolute; top: 82.06px; left: 118.17px; width: 7.59px; height: 7.63px;">
+        <img src="images/1_405.svg" alt="abstract illustration part" style="position: absolute; top: 76.44px; left: 112.69px; width: 18.65px; height: 18.76px;">
+        <img src="images/1_406.svg" alt="abstract illustration part" style="position: absolute; top: 84.3px; left: 80.74px; width: 17.62px; height: 19.24px;">
+        <img src="images/1_409.svg" alt="abstract illustration part" style="position: absolute; top: 105.28px; left: 86.38px; width: 22.32px; height: 8.67px;">
+        <img src="images/1_412.svg" alt="abstract illustration part" style="position: absolute; top: 87.79px; left: 84.34px; width: 22.32px; height: 22.44px;">
+        <img src="images/1_413.svg" alt="abstract illustration part" style="position: absolute; top: 96.39px; left: 92.9px; width: 5.18px; height: 5.21px;">
+        <img src="images/1_414.svg" alt="abstract illustration part" style="position: absolute; top: 92.5px; left: 89.1px; width: 12.87px; height: 12.94px;">
+        <img src="images/1_415.svg" alt="abstract illustration part" style="position: absolute; top: 137.16px; left: 67.86px; width: 9.26px; height: 0.9px;">
+        <img src="images/1_416.svg" alt="abstract illustration part" style="position: absolute; top: 133.94px; left: 68.12px; width: 9.0px; height: 3.69px;">
+        <img src="images/1_417.svg" alt="abstract illustration part" style="position: absolute; top: 131.65px; left: 73.65px; width: 2.61px; height: 3.19px;">
+        <img src="images/1_418.svg" alt="abstract illustration part" style="position: absolute; top: 139.08px; left: 90.09px; width: 3.55px; height: 1.68px;">
+        <img src="images/1_419.svg" alt="abstract illustration part" style="position: absolute; top: 132.45px; left: 88.4px; width: 5.21px; height: 7.84px;">
+        <img src="images/1_420.svg" alt="abstract illustration part" style="position: absolute; top: 130.03px; left: 87.79px; width: 3.12px; height: 3.68px;">
+        <img src="images/1_421.svg" alt="abstract illustration part" style="position: absolute; top: 95.59px; left: 67.73px; width: 23.02px; height: 37.23px;">
+        <img src="images/1_422.svg" alt="abstract illustration part" style="position: absolute; top: 101.7px; left: 70.83px; width: 4.04px; height: 4.09px;">
+        <img src="images/1_423.svg" alt="abstract illustration part" style="position: absolute; top: 61.12px; left: 41.44px; width: 14.18px; height: 15.43px;">
+        <img src="images/1_424.svg" alt="abstract illustration part" style="position: absolute; top: 71.14px; left: 53.67px; width: 33.53px; height: 26.19px;">
+        <img src="images/1_425.svg" alt="abstract illustration part" style="position: absolute; top: 73.28px; left: 65.78px; width: 1.82px; height: 5.61px;">
+        <img src="images/1_426.svg" alt="abstract illustration part" style="position: absolute; top: 66.22px; left: 72.09px; width: 4.96px; height: 6.82px;">
+        <img src="images/1_427.svg" alt="abstract illustration part" style="position: absolute; top: 60.49px; left: 70.65px; width: 6.93px; height: 7.84px;">
+        <img src="images/1_428.svg" alt="abstract illustration part" style="position: absolute; top: 57.09px; left: 70.43px; width: 9.57px; height: 9.51px;">
+        <img src="images/1_429.svg" alt="abstract illustration part" style="position: absolute; top: 63.62px; left: 75.8px; width: 1.69px; height: 2.4px;">
+        <img src="images/1_430.svg" alt="abstract illustration part" style="position: absolute; top: 63.02px; left: 44.6px; width: 3.03px; height: 3.16px;">
+        <img src="images/1_431.svg" alt="abstract illustration part" style="position: absolute; top: 88.9px; left: 69.9px; width: 12.35px; height: 5.62px;">
+        <img src="images/1_432.svg" alt="abstract illustration part" style="position: absolute; top: 93.86px; left: 59.38px; width: 16.47px; height: 1.36px;">
+        <img src="images/1_433.svg" alt="abstract illustration part" style="position: absolute; top: 81.56px; left: 45.47px; width: 21.59px; height: 13.65px;">
+        <img src="images/1_434.svg" alt="abstract illustration part" style="position: absolute; top: 86.33px; left: 52.95px; width: 2.88px; height: 3.67px;">
+      </div>
+      <div class="checklist-content">
+        <span class="checklist-number">2</span>
+        <p class="checklist-text">Check authoritative sources</p>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="checklist-content">
+        <span class="checklist-number">3</span>
+        <p class="checklist-text">Listen carefully</p>
+      </div>
+      <img src="images/1_256.svg" alt="Illustration of people listening" class="checklist-image">
+    </div>
+    <div class="checklist-item">
+      <img src="images/1_113.svg" alt="Illustration of inspecting patterns" class="checklist-image">
+      <div class="checklist-content">
+        <span class="checklist-number">4</span>
+        <p class="checklist-text">Inspect comments/share patterns</p>
+      </div>
+    </div>
+    <div class="checklist-item">
+      <div class="checklist-content">
+        <span class="checklist-number">5</span>
+        <p class="checklist-text">Ask “Who benefits?”</p>
+      </div>
+      <img src="images/1_206.svg" alt="Illustration of a person thinking" class="checklist-image">
+    </div>
+  </div>
+</section>
+</body>
+</html>

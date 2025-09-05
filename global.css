@@ -1,0 +1,42 @@
+:root {
+  --color-primary: #2ee8ae;
+  --color-secondary: #473acc;
+  --color-background: #000124;
+  --color-white: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-white);
+}
+
+.infographic-container {
+  max-width: 663px;
+  margin: 0 auto;
+  background-color: var(--color-background);
+  padding: 0 20px;
+  box-sizing: border-box;
+
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2.section-title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+  h2.section-title {
+    font-size: 24px;
+    text-align: center;
+  }
+}
